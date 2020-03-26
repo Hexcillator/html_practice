@@ -1,0 +1,67 @@
+<!--simple table using row, columns, span, thead, tbody, tfoot -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Table</title>
+    <style>
+        table,td{
+        border:1px solid black;
+        font-size:18px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1>HTML Table Practice</h1>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Surname</th>
+          <th scope="col">Country</th>
+          <th scope="col">City</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Simmonds</td>
+          <td rowspan="2">USA</td>
+          <td>Los Angeles</td>
+        </tr>
+        <tr>
+          <td>Peter</td>
+          <td>Winter</td>
+          <td>New York</td>
+        </tr>
+        <tr>
+          <td>Sean</td>
+          <td>Cost</td>
+          <td>Canada</td>
+          <td>Quebec</td>
+        </tr>
+        <tr>
+          <td>Wilfredo</td>
+          <td>Mendez</td>
+          <td>Mexico</td>
+          <td>DF</td>
+        </tr>
+        <tr>
+          <td>Mingo</td>
+          <td>Mosvil</td>
+          <td colspan="2">Unknown</td>
+        </tr>
+      </tbody>
+      <tfooter>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tfooter>
+
+    </table>
+
+  </body>
+
+</html>
