@@ -14,8 +14,65 @@
             <form action="/practice.html" method="POST">
                 <h1>Our Delicious Choices</h1>
                 <p>Try and be amazed</p>
-                <label></label>
-                <input type="text" name="username" value="The Big One"><!-- type assigns the sort of input the field accepts, name is necessary for receiving end and value gives a prefilled text-->
+                <label for="username">Please Enter your User Name</label>
+                <input type="text" name="username" id= "username" value="Patrick"><!-- type assigns the sort of input the field accepts,
+                  name is necessary for receiving end and value gives a prefilled text and id links label to input-->
+                <label for="user_pwd">Password</label>
+                <br>
+                <input type="password" name="user_pwd" id="user_pwd">
+
+                <h2>Next page after entering username and Password</h2>
+                <section class="protein">
+                  <label>What type of protein would you like</label>
+                  <br>
+                  <input type="text" name="burger" id="burger" value="Cheeseburger">
+                </section>
+                <hr>
+                <section class="Burguers">
+                  <label for="amount">How many Burgers would you like?</label>
+                  <br>
+                  <input type="number" id="amount" name="amount" step="1"><!-- step creates arrows that help choose numbers and we can choose the step from one number to the next-->
+                </section>
+                <hr />
+                <section>
+                  <label for="doneness">How would you liked it cooked?</label>
+                  <br>
+                  <span>Rare</span>
+                  <input type="range" min="0" max="5" step="0.5" from name="doneness" id="doneness">
+                  <span>Well done</span>
+                </section>
+                <hr>
+                <section class="toppings">
+                  <span>What toppings would you like?</span>
+                  <br>
+                  <input name="topping" id="tomato" type="checkbox" value="tomato">
+                  <label for="tomato">Tomato</label>
+                  <br>
+
+                  <input name="topping" id="peperoni" type="checkbox" value="peperoni">
+                  <label for="peperoni">Peperoni</label>
+                  <br>
+                  <input name="topping" id="onion" type="checkbox" value="onion">
+                  <label for="onion">Onion</label>
+                  <br>
+                  <input name="topping id="sweetcorn" type="checkbox" value="sweetcorn">
+                  <label for="sweetcorn">Sweetcorn</label>
+
+                </section>
+                <hr />
+
+                <section>
+                  <span>Would you like to add cheese?</span>
+                  <br>
+                  <input name="cheese" id="yes" type="radio" value="yes">
+                  <label for="yes">Yes</label>
+                  <br />
+                  <input name="cheese" id="no" type="radio" value="no">
+                  <label for ="no">No</label>
+                </section>
+
+
+
 
             </form>
     </section>
