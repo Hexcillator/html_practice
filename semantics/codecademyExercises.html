@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="eng" dir="ltr">
+    <head>
+      <meta charset="utf-8" />
+      <title>Semantics (related to meaning)</title>
+    </head>
+    <body>
+      <header>
+        <h1>Navigation Links</h1>
+          <nav>
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>contact</li>
+            </ul>
+          </nav>
+      </header>
+      <main>
+          <section>
+
+            <article>
+              <h2>The section tag</h2>
+              <p>
+                The section tag defines elements in a document, such as chapters, headings, or any other area of the document with the same theme. For example, content with the same theme such as articles about cricket can go under a single 'section'. A website’s home page could be split into sections for the introduction, news items, and contact information.
+              </p>
+            </article>
+
+            <article>
+              <h2>The article tag</h2>
+              <p>
+                The "article" element holds content that makes sense on its own. "article" can hold content such as articles, blogs, comments, magazines, etc. An "article" tag would help someone using a screen reader understand where the article content (that might contain a combination of text, images, audio, etc.) begins and ends.
+              </p>
+            </article>
+            <aside>
+              <h2>The Aside Element</h2>
+              <p>The "aside" element is used to mark additional information that can enhance another element but isn’t required in order to understand the main content. This element can be used alongside other elements such as "article" or 'section'. Some common uses of the "aside" element are for:</p>
+              <ul>
+                <li>Bibliographies</li>
+                <li>Endnotes</li>
+                <li>Comments</li>
+                <li>Pull quotes</li>
+                <li>Editorial sidebars</li>
+                <li>Additional information</li>
+              </ul>
+            </aside>
+            <article>
+              <h2>Figure and Figcaption</h2>
+              <p>"Figure"is an element used to encapsulate media such as an image, illustration, diagram, code snippet, etc, which is referenced in the main flow of the document.</p>
+              <p>&lt;figcaption&gt; is an element used to describe the media in the &lt;figure&gt; tag. Usually, &lt;figcaption&gt; will go inside &lt;figure&gt;. This is different than using a &lt;p&gt; element to describe the content; if we decide to change the location of &lt;figure&gt;, the paragraph tag may get displaced from the figure while a &lt;figcaption&gt; will move with the figure. This is useful for grouping an image with a caption.</p>
+                <figure>
+                  &lt;figure&gt;<br />
+                    &lt;img src="overwatch.jpg"&gt;<br />
+                    &lt;figcaption>This picture shows characters from Overwatch.&lt;/figcaption&gt;<br />
+                  &lt;/figure&gt;
+
+                  <figcaption>
+                    In the example above, we added a &lt;figcaption&gt; into the &lt;figure&gt; element to describe the image from the previous example. This helps group the &lt;figure&gt; content with the &lt;figcaption&gt; content.
+                    While the content in &lt;figure&gt; is related to the main flow of the document, its position is independent. This means that you can remove it or move it somewhere else without affecting the flow of the document.
+                  </figcaption>
+                </figure>
+            </article>
+
+            <article>
+              <h2>Audio and Attributes</h2>
+              <p>The &lt;audio&gt; element is used to embed audio content into a document. Like &lt;video&gt;, &lt;audio&gt; uses src to link the audio source.</p>
+              <h3>Example:</h3>
+              <figure>
+                &lt;audio controls&gt;<br />
+                    &lt;source src="https://codecademy-content.s3.amazonaws.com/courses/Semantic+HTML/dogBarking.mp3" type="audio/mp3"&gt;<br />
+                &lt;/audio&gt;<br />
+              </figure>
+              <audio controls>
+                  <source src="https://codecademy-content.s3.amazonaws.com/courses/Semantic+HTML/dogBarking.mp3" type="audio/mp3">
+              </audio>
+            </article>
+
+            <article>
+              <h2>video and Embed</h2>
+              <p></p>
+
+            </article>
+
+
+
+
+          </section>
+      </main>
+    <footer>
+      <p>contact me at 08987668899</p>
+    </footer>
+    </body>
+</html>
